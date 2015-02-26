@@ -1,0 +1,28 @@
+{
+    "name": "hackertheme",
+    "version": "1.0.0",
+    "description": "Bootstrap hacker theme lol",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LarsVonQualen/hackertheme.git"
+    },
+    "author": "Lars von Qualen",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LarsVonQualen/hackertheme/issues"
+    },
+    "homepage": "https://github.com/LarsVonQualen/hackertheme",
+    "dependencies": {
+        "bootstrap": "^3.3.2"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-contrib-less": "~0.11.0",
+        "grunt-contrib-watch": "~0.6.1",
+        "jit-grunt": "~0.7.0"
+    }
+}
