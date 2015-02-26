@@ -1142,6 +1142,16 @@
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
         $('[data-toggle="popover"]').popover();
+
+        // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+        $(document).on('show.bs.dropdown', function(e) {
+            $(e.target).find('.dropdown-menu').first().stop(true, true).slideDown(100);
+        });
+
+        // ADD SLIDEUP ANIMATION TO DROPDOWN //
+        $(document).on('hide.bs.dropdown', function(e) {
+            $(e.target).find('.dropdown-menu').first().stop(true, true).slideUp(50);
+        });
     })
     </script>
 </body>
