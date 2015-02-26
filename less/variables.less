@@ -40,7 +40,7 @@
 //** Global textual link color.
 @link-color:            @brand-info; //@brand-primary;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@brand-info, 15%);
+@link-hover-color:      @link-color;
 //** Link hover decoration.
 @link-hover-decoration: underline;
 
@@ -116,7 +116,7 @@
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    @text-color; //#fff;
 //** Global background color for active items (e.g., navs or dropdowns).
-@component-active-bg:       @brand-primary;
+@component-active-bg:       @brand-info;
 
 //** Width of the `border` for generating carets that indicator dropdowns.
 @caret-width-base:          4px;
@@ -242,9 +242,9 @@
 //** Dropdown link text color.
 @dropdown-link-color:            @link-color; //@gray-dark;
 //** Hover color for dropdown links.
-@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+@dropdown-link-hover-color:      @link-color; //darken(@gray-dark, 5%);
 //** Hover background for dropdown links.
-@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-hover-bg:         @body-bg-medium; //#f5f5f5;
 
 //** Active dropdown menu item text color.
 @dropdown-link-active-color:     @component-active-color;
@@ -424,13 +424,13 @@
 @nav-disabled-link-hover-color:             @gray-light;
 
 //== Tabs
-@nav-tabs-border-color:                     @body-bg-light; //#ddd;
+@nav-tabs-border-color:                     @link-color; //#ddd;
 
-@nav-tabs-link-hover-border-color:          @body-bg-light; //@gray-lighter;
+@nav-tabs-link-hover-border-color:          @link-color; //@gray-lighter;
 
 @nav-tabs-active-link-hover-bg:             @body-bg;
 @nav-tabs-active-link-hover-color:          @text-color; //@gray;
-@nav-tabs-active-link-hover-border-color:   @body-bg-light; //#ddd;
+@nav-tabs-active-link-hover-border-color:   @link-color; //#ddd;
 
 @nav-tabs-justified-link-border-color:            @body-bg-light; //#ddd;
 @nav-tabs-justified-active-link-border-color:     @body-bg;
